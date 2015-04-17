@@ -20,7 +20,7 @@ module: {
         {
                 test: /\.html$/,
                 name: "mandrillTemplates",
-                loader: 'html-minify-loader!raw'
+                loader: 'raw!html-minify'
         }
     ]
 }
@@ -34,7 +34,7 @@ module: {
         {
                 test: /\.html$/,
                 name: "mandrillTemplates",
-                loader: 'html-minify-loader!raw'
+                loader: 'raw!html-minify'
         }
     ]
 },

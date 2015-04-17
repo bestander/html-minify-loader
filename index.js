@@ -10,7 +10,5 @@ module.exports = function(source) {
 
     var opts = this.options['html-minify-loader'] || {};
     minimize = new Minimize(opts);
-    minimize.parse(source, function (error, data) {
-        callback(data);
-    });
+    minimize.parse(source, callback);
 };
