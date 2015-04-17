@@ -1,5 +1,5 @@
 # html-minify-loader
-Loader for webpack that minifies HTML using (minimize)[https://github.com/Moveo/minimize]
+Loader for webpack that minifies HTML using [minimize](https://github.com/Moveo/minimize)
 
 To install
 ---
@@ -26,7 +26,7 @@ module: {
 }
 ```
 
-You can pass (minimize)[https://github.com/Moveo/minimize] parameters via 'html-minify-loader' property of webpack config.
+You can pass [minimize](https://github.com/Moveo/minimize) parameters via 'html-minify-loader' property of webpack config.
 
 ```
 module: {
