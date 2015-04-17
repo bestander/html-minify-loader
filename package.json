@@ -1,17 +1,14 @@
 {
   "name": "html-minify-loader",
   "version": "1.0.0",
-  "description": "",
+  "description": "Loader for webpack that minifies HTML using (minimize)[https://github.com/Moveo/minimize]",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bestander/html-minify-loader.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Konstantin Raev",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bestander/html-minify-loader/issues"
   },
