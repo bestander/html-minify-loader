@@ -1,6 +1,6 @@
 {
   "name": "html-minify-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loader for webpack that minifies HTML using (minimize)[https://github.com/Moveo/minimize]",
   "main": "index.js",
   "repository": {
@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/bestander/html-minify-loader",
   "dependencies": {
-    "minimize": "^1.3.3"
+    "minimize": "^1.8.1"
   }
 }
