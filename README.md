@@ -41,7 +41,10 @@ module: {
 'html-minify-loader': {
      empty: true,        // KEEP empty attributes
      cdata: true,        // KEEP CDATA from scripts
-     comments: true     // KEEP comments
+     comments: true,     // KEEP comments
+     dom: {                            // options of !(htmlparser2)[https://github.com/fb55/htmlparser2]
+            lowerCaseAttributeNames: false,      // do not call .toLowerCase for each attribute name (Angular2 use camelCase attributes)
+     }
 }
 
 ```
