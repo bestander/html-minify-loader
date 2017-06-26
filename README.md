@@ -14,6 +14,7 @@ Use it when you need to reduce the file size of your webpack template modules by
 
 Example
 ---
+webpack 1
 ```
 module: {
     loaders: [
@@ -45,6 +46,31 @@ module: {
      dom: {                            // options of !(htmlparser2)[https://github.com/fb55/htmlparser2]
             lowerCaseAttributeNames: false,      // do not call .toLowerCase for each attribute name (Angular2 use camelCase attributes)
      }
+}
+
+```
+
+webpack 2
+
+You can pass [minimize](https://github.com/Moveo/minimize) parameters via options property of loader. Example with multiple loaders.
+
+```
+module: {                                                           
+   rules: [                                                        
+	  {
+		 test: /\.html$/, include: [applicationSource],
+		 loaders: [
+			'file-loader?publicPath=/,name=[path][name].min.[ext]',
+			{
+			   loader: 'html-minify-loader',
+			   options: {
+				  quotes: true,
+				  dom: { lowerCaseTags: false }
+			   }
+			}
+		 ]
+	  }
+   ]
 }
 
 ```
