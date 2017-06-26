@@ -15,5 +15,8 @@
   "homepage": "https://github.com/bestander/html-minify-loader",
   "dependencies": {
     "minimize": "^1.8.1"
+  },
+  "devDependencies": {
+	"loader-utils": "^1.1.0"
   }
 }
